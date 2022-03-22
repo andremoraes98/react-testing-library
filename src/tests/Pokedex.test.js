@@ -60,6 +60,8 @@ describe('Testa o componente "<Pokedex />".', () => {
 
     const resetFilterButton = screen.getByRole('button', { name: 'All' });
 
+    userEvent.click(resetFilterButton);
+
     expect(resetFilterButton).toBeInTheDocument();
   });
 });
